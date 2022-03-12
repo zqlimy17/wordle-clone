@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle!</title>
+    <script src="./words.min.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500"
+      rel="stylesheet"
+    />
+    <link rel="icon shortcut" href="./favicon.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Wordle</h1>
+      <div id="settings">&#9881;</div>
+    </header>
+    <div class="container">
+      <div class="main">
+        <div id="message"></div>
+        <div class="game">
+          <div id="grid"></div>
+        </div>
+      </div>
+      <div id="keyboard"></div>
+    </div>
+    <div id="statsContainer">
+      <div class="statsContainer-inner">
+        <div id="closeButton">&#10006;</div>
+        <p class="answer"><span id="answer"></span></p>
+        <h2>Statistics</h2>
+        <div class="stats">
+          <div>
+            <p class="stat" id="gamesPlayed">1</p>
+            <p>Games Played</p>
+          </div>
+          <div>
+            <p class="stat"><span id="winPercentage">100</span>%</p>
+            <p>Win Rate</p>
+          </div>
+          <div>
+            <p class="stat" id="currentStreak">23</p>
+            <p>Current Streak</p>
+          </div>
+          <div>
+            <p class="stat" id="maxStreak">203</p>
+            <p>Max Streak</p>
+          </div>
+        </div>
+        <div>
+          <div id="again">PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+    <div id="settingsContainer">
+      <h2>Words Length</h2>
+      <div class="wordLengthContainer">
+        <div class="settingButton" data-words="4" id="words4">4</div>
+        <div class="settingButton" data-words="5" id="words5">5</div>
+        <div class="settingButton" data-words="6" id="words6">6</div>
+        <div class="settingButton" data-words="7" id="words7">7</div>
+        <div class="settingButton" data-words="8" id="words8">8</div>
+      </div>
+    </div>
+  </body>
+</html>
